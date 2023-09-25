@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
+    <!--<script>
       fetch('https://randomuser.me/api/?inc=name,picture')
         .then((response) => response.json())
         .then(({ results }) => results[0])
@@ -37,20 +37,20 @@
           document.title = `${name.first} ${name.last} Personal Site`
           document.querySelector('#profilepic').src = picture.large
         })
-    </script>
+    </script>-->
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Jenny Ni Personal Site</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container-fluid p-2 px-lg-2 py-lg-0">
         <!-- Set Name Here -->
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">Jenny Ni</a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -92,17 +92,18 @@
       >
       <!-- Set Photo Here -->
         <img
-          style="height: 150px; width: 150px"
+          style="height: 150px; width: 150px; background-image: url('angular.jpg')"
           class="rounded-circle"
           draggable="false"
           id="profilepic"
+          src="images/me.jpg"
         />
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          <span id="name">Jenny Ni</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -196,68 +197,58 @@
         ></a>
       </div>
     </div>
-    <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
-      id="projects"
-    >
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
-      </div>
-      <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
-          I've worked on some neat things.
-        </h5>
-      </div>
-      <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
-      </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
-        </p>
-      </div>
-      <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
-      </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
-        </p>
-      </div>
-      <div class="row w-100">
-        <h5>Query Dating Site</h5>
-      </div>
-      <div class="row w-100">
-        <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
-        </p>
-      </div>
-      <div class="row mt-3 next">
-        <a href="#courses" class="col"
-          ><iconify-icon
-            icon="material-symbols:arrow-circle-down"
-            class="arrow-next"
-          ></iconify-icon
-        ></a>
-      </div>
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+         id="projects">
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
+                I've worked on some neat things.
+            </h5>
+        </div>
+        <div class="row w-100">
+            <h5>Dating Site</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                A dating site web application that caters specifically to the transgender community, providing them a 
+                safe and inclusive platform to find romantic partners or build meaningful relationships
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>Jeopardy Windows Form</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                Created a Jeopardy game in a Windows Form application that will allow users to play the game while also
+                incorporating Microsoft Access for database management
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>Pet Shop Web API</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                A pet shop website that provides customers with an easy-to-use interface for adopting pets and adding and
+                modifying pet info online by integrating with a Web API and database
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>Ice Cream Shop with ReactJS</h5>
+        </div>
+        <div class="row w-100">
+            <p class="text-justify">
+                Using ReactJS, designed and developed an online ice cream shop to provide customers the ability to browse
+                different flavors, create their own custom ice cream, and place an order online
+            </p>
+        </div>
+        <div class="row mt-3 next">
+            <a href="#courses" class="col">
+                <iconify-icon icon="material-symbols:arrow-circle-down"
+                              class="arrow-next"></iconify-icon>
+            </a>
+        </div>
     </div>
     <div
       class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
@@ -268,66 +259,60 @@
       </div>
       <div class="row mx-auto mb-4">
         <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
-          Not as tasty as a main course, but close.
+            Courses that I am currently taking or have completed.
         </h5>
       </div>
+
       <div class="row w-100 justify-content-center my-3 gap-4">
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%204296"
-          target="_blank"
-        >
-          <h5 class="m-0">Information Systems Analysis and Design</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203342"
-          target="_blank"
-        >
-          <h5 class="m-0">Server-Side Web Application Development</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203329"
-          target="_blank"
-        >
-          <h5 class="m-0">Network Architectures</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203344"
-          target="_blank"
-        >
-          <h5 class="m-0">Client-Side Scripting</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%203309"
-          target="_blank"
-        >
-          <h5 class="m-0">Component-Based Software Design</h5>
-        </a>
-        <a
-          class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
-          type="button"
-          href="https://bulletin.temple.edu/search/?P=CIS%202109"
-          target="_blank"
-        >
-          <h5 class="m-0">Database Management Systems</h5>
-        </a>
-        <div class="row mt-5 next justify-content-center align-items-center">
-          <a href="#contact" class="text-center"
-            ><iconify-icon
-              icon="material-symbols:arrow-circle-down"
-              class="arrow-next"
-            ></iconify-icon
-          ></a>
-        </div>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Information Systems Analysis and Design
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Securing the Internet of Things
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Software Security
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Server-Side Web App Development
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Client-Side Scripting for Web
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Component-Based Software Design
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Intro to Mobile App Development
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Network Architecture
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Architecture, Operating System & Networking
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              IT Project Management
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Database Management System
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Data Structures
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Program Design & Abstraction
+          </span>
+          <span class="display-8 col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center">
+              Intro to Problem Solving & Programming in Python
+          </span>
+          
+          <div class="row mt-5 next justify-content-center align-items-center">
+              <a href="#contact" class="text-center">
+                  <iconify-icon icon="material-symbols:arrow-circle-down"
+                                class="arrow-next"></iconify-icon>
+              </a>
+          </div>
       </div>
     </div>
     <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
@@ -340,16 +325,16 @@
     >
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
-          Feel Like Reaching Out?
+          Contact Information
         </h4>
       </div>
       <div class="row mx-auto">
         <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
-          I don't bite.
+          Feel free to contact me.
         </h5>
       </div>
       <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
+        <a href="mailto:jenny2002ni@gmail.com" class="col text-black">
           <iconify-icon
             icon="logos:google-gmail"
             width="60"
@@ -359,7 +344,7 @@
             title="Email"
           ></iconify-icon>
         </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
+        <a href="https://www.linkedin.com/in/jenny-ni-14b14b1b0/" class="col"
           ><iconify-icon
             icon="skill-icons:linkedin"
             width="60"
@@ -369,7 +354,7 @@
             title="LinkedIn"
           ></iconify-icon>
         </a>
-        <a href="https://github.com/johndoe" class="col"
+        <a href="https://github.com/jenny-ni610" class="col"
           ><iconify-icon
             icon="skill-icons:github-dark"
             width="60"
