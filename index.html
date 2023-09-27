@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
-    <!-- Remove this and fill in your name & photo in the required areas -->
-    <!--<script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>-->
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
     <title>Jenny Ni Personal Site</title>
-  </head>
+
+    <!--<script>
+        $(document).ready(function () {
+            $('#carouselExampleControls').carousel();
+        });
+    </script>-->
+
+</head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
       <div class="container-fluid p-2 px-lg-2 py-lg-0">
-        <!-- Set Name Here -->
         <a class="navbar-brand" href="#">Jenny Ni</a>
         <button
           class="navbar-toggler bg-white"
@@ -87,21 +72,14 @@
       class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center pt-5"
       id="home"
     >
-      <div
-        class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5"
-      >
-      <!-- Set Photo Here -->
+      <div class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5">
         <img
           style="height: 150px; width: 150px; background-image: url('angular.jpg')"
-          class="rounded-circle"
-          draggable="false"
-          id="profilepic"
-          src="images/me.jpg"
+          class="rounded-circle" draggable="false" id="profilepic" src="images/me.jpg"
         />
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
-          <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
           <span id="name">Jenny Ni</span>!
         </h4>
@@ -308,94 +286,120 @@
           </span>
           
           <div class="row mt-5 next justify-content-center align-items-center">
-              <a href="#contact" class="text-center">
-                  <iconify-icon icon="material-symbols:arrow-circle-down"
-                                class="arrow-next"></iconify-icon>
+              <a href="#aboutme" class="text-center">
+                  <iconify-icon icon="material-symbols:arrow-circle-down" class="arrow-next"></iconify-icon>
               </a>
           </div>
       </div>
     </div>
-    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
-      id="aboutme">
-        <h4 class="h1 font-weight-bold mx-auto text-center">About Me</h4>
-        <p class="text-justify">
-            I'm an Asian American from Philadelphia, Pennsylvania. I have 2 older sisters and 1 younger brother. 
-            I love making pancakes and playing games. I also have 2 very cute cats, Captain and Charchoal, and 2 turtles. 
-            Every time when I go home, I look forward to see them.
-        </p>
-        <!-- some ideas 
-            - add pic of pets, when click on them -> modal popup or alert with text or popover
-            - *carousel for pet pics
-            - *pfp - popover-->
-    </div>
-    <div
-      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
-      id="contact"
-    >
-      <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">
-          Contact Information
-        </h4>
-      </div>
-      <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
-          Feel free to contact me.
-        </h5>
-      </div>
-      <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:jenny2002ni@gmail.com" class="col text-black">
-          <iconify-icon
-            icon="logos:google-gmail"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Email"
-          ></iconify-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/jenny-ni-14b14b1b0/" class="col"
-          ><iconify-icon
-            icon="skill-icons:linkedin"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="LinkedIn"
-          ></iconify-icon>
-        </a>
-        <a href="https://github.com/jenny-ni610" class="col"
-          ><iconify-icon
-            icon="skill-icons:github-dark"
-            width="60"
-            height="60"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="GitHub"
-          ></iconify-icon>
-        </a>
-      </div>
-      <div class="row mt-5">
-        <div>
-          <a href="#home">
-            <button type="button" class="btn btn-primary">
-              Return to Top<iconify-icon
-                icon="material-symbols:arrow-circle-up"
-                class="fs-5"
-                style="margin-bottom: -3.5px; margin-left: 5px"
-              ></iconify-icon></button
-          ></a>
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center" id="aboutme">
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">About Me</h4>
         </div>
-      </div>
+        <div class="row mx-auto mb-4">
+            <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
+                Just a few things about me.
+            </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                I'm an Asian American from Philadelphia, Pennsylvania. I have 2 older sisters and 1 younger brother.
+                I love making pancakes and playing games. I also have 2 very cute cats, Captain and Charchoal, and 2 turtles.
+                Every time when I go home, I look forward to see them.
+            </p>
+        </div>
+        <div id="petCarousel" class="carousel slide bg-secondary" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/captain.png" class="d-block" alt="black cat">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/charcoal.jpg" class="d-block" alt="grey cat">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/turtles.jpg" class="d-block" alt="2 turtles">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row mt-5 next justify-content-center align-items-center">
+            <a href="#contact" class="text-center">
+                <iconify-icon icon="material-symbols:arrow-circle-down" class="arrow-next"></iconify-icon>
+            </a>
+        </div>
+        <!-- some ideas
+    -  popover for project/courses-->
+    </div>
+    <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+            id="contact">
+        <div class="row mx-auto">
+            <h4 class="h1 font-weight-bold mx-auto text-center">
+                Contact Information
+            </h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
+                Feel free to contact me.
+            </h5>
+        </div>
+        <div class="row my-4 contact-wrapper gap-3">
+            <a href="mailto:jenny2002ni@gmail.com" class="col text-black">
+                <iconify-icon icon="logos:google-gmail"
+                                width="60"
+                                height="60"
+                                data-bs-toggle="tooltip"
+                                data-placement="top"
+                                title="Email"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/jenny-ni-14b14b1b0/" class="col">
+                <iconify-icon icon="skill-icons:linkedin"
+                                width="60"
+                                height="60"
+                                data-bs-toggle="tooltip"
+                                data-placement="top"
+                                title="LinkedIn"></iconify-icon>
+            </a>
+            <a href="https://github.com/jenny-ni610" class="col">
+                <iconify-icon icon="skill-icons:github-dark"
+                                width="60"
+                                height="60"
+                                data-bs-toggle="tooltip"
+                                data-placement="top"
+                                title="GitHub"></iconify-icon>
+            </a>
+        </div>
+        <div class="row mt-5">
+            <div>
+                <a href="#home">
+                    <button type="button" class="btn btn-primary">
+                        Return to Top
+                        <iconify-icon icon="material-symbols:arrow-circle-up" class="fs-5" style="margin-bottom: -3.5px; margin-left: 5px"></iconify-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
     </div>
 
     <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      )
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) =>
-          new bootstrap.Tooltip(tooltipTriggerEl, { delay: { hide: 50 } })
-      )
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        )
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) =>
+                new bootstrap.Tooltip(tooltipTriggerEl, { delay: { hide: 50 } })
+        )
     </script>
-  </body>
+</body>
 </html>
